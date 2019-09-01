@@ -1,5 +1,5 @@
 Flask==1.0.2
 numpy==1.17.0
-Sklearn
+scikit-learn
 xgboost
 pandas
