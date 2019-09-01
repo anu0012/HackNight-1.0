@@ -169,10 +169,8 @@ pycosat==0.6.3
 pycparser==2.18
 pycrypto==2.6.1
 pycurl==7.43.0.1
-pydtw==1.0.0
 pyfiglet==0.8.post1
 pyflakes==1.6.0
-pygame==1.9.4
 Pygments==2.2.0
 PyJWT==1.7.1
 pylint==1.8.4
@@ -183,8 +181,6 @@ Pyomo==5.6.6
 pyOpenSSL==18.0.0
 pyparsing==2.2.0
 pypyodbc==1.3.4
-PyQt5==5.12.2
-PyQt5-sip==4.19.17
 PySocks==1.6.8
 pytest==3.5.1
 pytest-arraydiff==0.2
@@ -201,7 +197,6 @@ PyYAML==3.12
 pyzmq==17.0.0
 QtAwesome==0.4.4
 qtconsole==4.3.1
-QtPy==1.4.1
 regex==2017.4.5
 requests==2.18.4
 retrying==1.3.3
