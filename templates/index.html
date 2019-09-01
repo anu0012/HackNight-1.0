@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		body {
+    	position: relative; 
+  	}
+		ul.nav-pills {
+			top: 20px;
+			position: fixed;
+		}
+		div.col-8 div {
+			height: 500px;
+		}
+		#grad1 {
+			background-image: linear-gradient(to right, rgba(192,51,32,0), rgba(198,63,35,0.4)); /* Standard syntax (must be last) */
+		}
+	</style>
+</head>
+	<body id="grad1" data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav class="col-sm-3 col-4" id="myScrollspy">
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#section2">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#section1">Form</a>
+					</li>
+			</ul>
+		</nav>
+		<div class="container" id="section2" style="border: 3px solid burlywood; box-shadow: 10px sandybrown;">
+				The app predict with the help of given data whether the employee should go for treatment or not?
+			</div>
+		<div class="container" id="section1" style="border: 3px solid burlywood; box-shadow: 10px sandybrown;">
+			<h3>My Predictor</h3>
+			<form action="/" method="POST">
+				<div class="form-group row">
+					<label class="col-sm" for="age">Age</label>
+					<input class="col-sm" type="number" id="age" name="age">
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="gender">Gender</label>
+					<select name="gender" class="col-sm">
+						<option selected value="1">Male</option>
+						<option value="0">Female</option>
+						<option value="2">Other</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="country">Country</label>
+					<select name="country" class="col-sm">
+						<option selected value="38">United States</option>
+						<option value="6">Canada</option>
+						<option value="37">United Kingdom</option>
+						<option value="5">Bulgaria</option>
+						<option value="12">France</option>
+						<option value="27">Portugal</option>
+						<option value="22">Netherlands</option>
+						<option value="35">Switzerland</option>
+						<option value="26">Poland</option>
+						<option value="0">Australia</option>
+						<option value="13">Germany</option>
+						<option value="29">Russia</option>
+						<option value="21">Mexico</option>
+						<option value="4">Brazil</option>
+						<option value="31">Slovenia</option>
+						<option value="8">Costa Rica</option>
+						<option value="1">Austria</option>
+						<option value="16">Ireland</option>
+						<option value="15">India</option>
+						<option value="32">South Africa</option>
+						<option value="18">Italy</option>
+						<option value="34">Sweden</option>
+						<option value="7">Colombia</option>
+						<option value="20">Latvia</option>
+						<option value="28">Romania</option>
+						<option value="2">Belgium</option>
+						<option value="23">New Zealand</option>
+						<option value="40">Zimbabwe</option>
+						<option value="33">Spain</option>
+						<option value="11">Finland</option>
+						<option value="39">Uruguay</option>
+						<option value="39">Israel</option>
+						<option value="17">Bosnia and Herzegovina</option>
+						<option value="3">Hungary</option>
+						<option value="14">Singapore</option>
+						<option value="30">Japan</option>
+						<option value="19">Nigeria</option>
+						<option value="24">Croatia</option>
+						<option value="9">Norway</option>
+						<option value="25">Thailand</option>
+						<option value="36">Denmark</option>
+						<option value="10">Bahamas</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+						<label class="col-sm" for="state">State</label>
+						<select class="col-sm" type="text" id="state" name="state">
+							<option selected value="32">Not in US</option>
+							<option value="10">IL</option>
+							<option value="11">IN</option>
+							<option value="38">TX</option>
+							<option value="37">TN</option>
+							<option value="18">MI</option>
+							<option value="29">OH</option>
+							<option value="2">CA</option>
+							<option value="4">CT</option>
+							<option value="16">MD</option>
+							<option value="28">NY</option>
+							<option value="22">NC</option>
+							<option value="15">MA</option>
+							<option value="8">IA</option>
+							<option value="33">PA</option>
+							<option value="42">WA</option>
+							<option value="43">WI</option>
+							<option value="39">UT</option>
+							<option value="26">NM</option>
+							<option value="31">OR</option>
+							<option value="6">FL</option>
+							<option value="19">MN</option>
+							<option value="20">MO</option>
+							<option value="1">AZ</option>
+							<option value="3">CO</option>
+							<option value="7">GA</option>
+							<option value="5">DC</option>
+							<option value="23">NE</option>
+							<option value="44">WV</option>
+							<option value="30">OK</option>
+							<option value="12">KS</option>
+							<option value="40">VA</option>
+							<option value="24">NH</option>
+							<option value="13">KY</option>
+							<option value="0">AL</option>
+							<option value="27">NV</option>
+							<option value="25">NJ</option>
+							<option value="35">SC</option>
+							<option value="41">VT</option>
+							<option value="36">SD</option>
+							<option value="9">ID</option>
+							<option value="21">MS</option>
+							<option value="34">RI</option>
+							<option value="45">WY</option>
+							<option value="14">LA</option>
+							<option value="17">ME</option>
+						</select>
+					</div>
+				<div class="form-group row">
+					<label class="col-sm" for="self_employed">Self Employed</label>
+					<select class="col-sm" type="text" id="self_employed" name="self_employed">
+						<option value="0">Other</option>
+						<option selected value="1">Yes</option>
+						<option value="2">No</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="family_history">Family History</label>
+					<select class="col-sm" type="text" id="family_history" name="family_history">
+						<option selected value="0">No</option>
+						<option value="1">Yes</option>
+					</select>
+				</div>
+				<!-- <div class="form-group row">
+					<label class="col-sm" for="treatment">Treatment</label>
+					<input class="col-sm" type="text" id="treatment" name="treatment">
+				</div> -->
+				<div class="form-group row">
+					<label class="col-sm" for="work_interface">Work Interface</label>
+					<select class="col-sm" type="text" id="work_interface" name="work_interface">
+						<option selected value="1">Often</option>
+						<option value="3">Rarely</option>
+						<option value="0">Never</option>
+						<option value="4">Sometimes</option>
+						<option value="2">Other</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="no_employees">No of Employees</label>
+					<input class="col-sm" type="number" id="no_employees" name="no_employees">
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="remote_work">Remote Work</label>
+					<select class="col-sm" type="text" id="remote_work" name="remote_work">
+						<option selected value="0">1-5</option>
+						<option value="4">6-25</option>
+						<option value="2">26-100</option>
+						<option value="1">100-500</option>
+						<option value="3">500-1000</option>
+						<option value="5">More than 1000</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="tech_company">Tech Company</label>
+					<select class="col-sm" type="text" id="tech_company" name="tech_company">
+						<option selected value="0">No</option>
+						<option value="1">Yes</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="benefits">Benefits</label>
+					<select class="col-sm" type="text" id="benefits" name="benefits">
+						<option selected value="1">Yes</option>
+						<option value="0">No</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="care_options">Care Options</label>
+					<select class="col-sm" type="text" id="care_options" name="care_options">
+						<option selected value="2">Yes</option>
+						<option value="1">No</option>
+						<option value="0">Don't Know</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="wellness_program">Well Program</label>
+					<select class="col-sm" type="text" id="wellness_program" name="wellness_program">
+						<option selected value="1">Not Sure</option>
+						<option value="0">No</option>
+						<option value="2">Yes</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="seek_help">seek_help</label>
+					<select class="col-sm" type="text" id="seek_help" name="seek_help">
+						<option selected value="1">No</option>
+						<option value="0">Don't</option>
+						<option value="2">Yes</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="anonymity">Anonymity</label>
+					<select class="col-sm" type="text" id="anonymity" name="anonymity">
+						<option selected value="2">Yes</option>
+						<option value="0">Don't Know</option>
+						<option value="1">No</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="leave">Leave</label>
+					<select class="col-sm" type="text" id="leave" name="leave">
+						<option selected value="2">Yes</option>
+						<option value="0">Don't Know</option>
+						<option value="1">No</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="mental_health_consequence">Mental Health Consequence</label>
+					<select class="col-sm" type="text" id="mental_health_consequence" name="mental_health_consequence">
+						<option selected value="4">Very Easy</option>
+						<option value="2">Somewhat Easy</option>
+						<option value="0">Don't Know</option>
+						<option value="1">Somewhat Difficult</option>
+						<option value="3">Very Difficult</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="phys_health_consequence">Physical Health Consequence</label>
+					<select class="col-sm" type="text" id="phys_health_consequence" name="phys_health_consequence">
+						<option selected value="1">No</option>
+						<option value="0">Maybe</option>
+						<option value="2">Yes</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="coworkers">Coworkers</label>
+					<select class="col-sm" type="text" id="coworkers" name="coworkers">
+						<option selected value="1">No</option>
+						<option value="0">Maybe</option>
+						<option value="2">Yes</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="supervisor">Supervisor</label>
+					<select class="col-sm" type="text" id="supervisor" name="supervisor">
+						<option selected value="2">Yes</option>
+						<option value="1">No</option>
+						<option value="0">Some of Them</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="mental_health_interview">Mental Health Interview</label>
+					<select class="col-sm" type="text" id="mental_health_interview" name="mental_health_interview">
+						<option selected value="1">No</option>
+						<option value="2">Yes</option>
+						<option value="0">Maybe</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="phys_health_interview">Physical Health Interview</label>
+					<select class="col-sm" type="text" id="phys_health_interview" name="phys_health_interview">
+						<option selected value="0">Maybe</option>
+						<option value="1">No</option>
+						<option value="2">Yes</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm" for="mental_vs_physical">Mental vs Physical</label>
+					<select class="col-sm" type="text" id="mental_vs_physical" name="mental_vs_physical">
+						<option selected value="2">Yes</option>
+						<option value="0">Don't Know</option>
+						<option value="1">No</option>
+					</select>
+				<!-- </div>
+				<div class="form-group row"> -->
+					<label class="col-sm" for="obs_consequence">Obs Consequece</label>
+					<select class="col-sm" type="text" id="obs_consequence" name="obs_consequence">
+						<option selected value="0">No</option>
+						<option value="1">Yes</option>
+					</select>
+				</div>
+				<button class="col-sm" type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/><br/>
+	</body>
+</html>
