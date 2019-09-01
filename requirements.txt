@@ -41,7 +41,6 @@ dash-core-components==0.33.0
 dash-html-components==0.13.2
 dash-renderer==0.14.3
 dask==0.17.5
-datashape==0.5.4
 decorator==4.3.0
 dill==0.3.0
 distributed==1.21.8
