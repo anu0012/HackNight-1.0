@@ -117,7 +117,6 @@ MarkupSafe==1.0
 matplotlib==2.2.2
 mccabe==0.6.1
 mistune==0.8.3
-mkl-random==1.0.1
 mongoengine==0.18.2
 more-itertools==4.1.0
 mpmath==1.0.0
