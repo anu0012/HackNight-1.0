@@ -16,7 +16,6 @@ backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.6.0
 bitarray==0.8.1
 bkcharts==0.2
-blaze==0.11.3
 bleach==1.5.0
 bokeh==0.12.16
 boto==2.48.0
@@ -29,11 +28,7 @@ cffi==1.11.5
 chardet==3.0.4
 click==6.7
 cloudpickle==0.5.3
-clyent==1.2.2
 colorama==0.3.9
-conda==4.5.4
-conda-build==3.10.5
-conda-verify==2.0.0
 contextlib2==0.5.5
 cryptography==2.2.2
 cvxpy==1.0.24
